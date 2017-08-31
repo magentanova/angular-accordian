@@ -1,0 +1,19 @@
+.children {
+	transition: .5s ease max-height;
+	overflow: hidden;
+}
+
+
+.item-name {
+	margin:0;
+	padding: 10px 50px 10px 0;
+	font-weight: normal;
+	background: #ddd;
+	text-align: left;
+	cursor: pointer;
+}
+
+.item-name.shaded {
+	background: #555;
+	color: white;
+}

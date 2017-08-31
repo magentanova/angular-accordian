@@ -1,3 +1,13 @@
-<h1>
-  Hello, world!
-</h1>
+<div class="container">
+	<h1>
+	  Accordion to whom...
+	</h1>
+	<div class="menu-wrapper">
+		<li class="menu-item" *ngFor="let item of menu">
+			<menu-item 
+				[menuItem]="item"
+				[level]="1">
+			</menu-item>
+		</li>
+	</div>
+</div>

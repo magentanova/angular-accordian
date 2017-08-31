@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-
-class MenuItem {
-    constructor(public name: string, public children: MenuItem[]) {}
-}
+import { MenuItem } from './menuItem';
+import { MenuItemComponent } from './menu-item.component'
 
 var menu: MenuItem[] = [
   new MenuItem("Menu Item 1", [
@@ -23,8 +21,9 @@ var menu: MenuItem[] = [
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   private menu: MenuItem[] = menu;
 
-  constructor() {}
+  constructor() {};
 }

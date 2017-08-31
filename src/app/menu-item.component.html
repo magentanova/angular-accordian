@@ -1,0 +1,17 @@
+<h3 
+	[ngStyle]="{'padding-left': level * 40 + 'px'}"
+	[ngClass]="menuItem.children.length ? 'item-name shaded' : 'item-name'"
+	(click)="toggleExpand()" >
+	{{menuItem.name}}
+</h3>
+<div class="children"
+	[ngStyle]="{'max-height': expanded ? getHeight() + 'px' : '0px'}" >
+	<li 
+		*ngFor="let child of menuItem.children">
+	  	<menu-item 
+	  		[menuItem]="child"
+	  		[level]="level + 1"
+	  		>
+	  	</menu-item>
+	</li>
+</div>

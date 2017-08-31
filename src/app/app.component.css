@@ -1,0 +1,20 @@
+h1 {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	font-family: Helvetica;
+	max-width: 750px;
+	margin: 50px auto;
+}
+
+.menu-wrapper {
+	display: inline-block;
+	text-align: left;
+	max-width: 350px;
+	margin: 40px 0;
+}
